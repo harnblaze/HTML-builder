@@ -13,4 +13,4 @@ stdin.on('data', (chunk) => {
 
 const exitProcess = () => stdout.write('Удачи! Еще увидимся!\n');
 process.on('exit', exitProcess);
-process.on('SIGINT', exitProcess);
+process.on('SIGINT', process.exit);
